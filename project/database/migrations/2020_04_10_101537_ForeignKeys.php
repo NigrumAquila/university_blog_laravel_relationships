@@ -38,7 +38,7 @@ class ForeignKeys extends Migration
     {
         Schema::table('exam_marks', function($table)
         {
-            $table->dropForeign('exam_marks_subject_id_foreign');
+            $table->dropForeign('exam_marks_group_subjects_id_foreign');
             $table->dropForeign('exam_marks_student_id_foreign');
             $table->dropForeign('exam_marks_mark_id_foreign');
         });
